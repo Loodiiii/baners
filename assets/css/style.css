@@ -187,6 +187,12 @@ header{
     align-items: center;
 }
 
+.about-buttons button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.05mm;
+}
+
 .add-to-cart{
     border: 1px solid #AAA1A1;
     background-color: transparent;
@@ -201,4 +207,149 @@ header{
     color: white;
     font-size: 24px;
     padding: 15px 130px;
+}
+
+/* -- SECTION ONE ENDS HERE, SECONDS STARTS  -- */
+
+.s2-container{
+    background-color: #EDEFF2;
+    padding: 100px 160px;
+}
+
+.s2-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.s2-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 315px;
+}
+
+.s2-icon{
+    width: 155px;
+    height: 114px;
+    margin-bottom: 12%;
+}
+
+.wifi-icon{
+    background: url('../images/wifi.png');
+}
+
+.motion-icon{
+    background: url('../images/motion.png');
+    width: 141px;
+    height: 146px;
+}
+
+.rotation-icon{
+    background: url('../images/rotation.png');
+    width: 134px;
+    height: 134px;
+}
+
+.s2-div p{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+/* -- FOOTER SECTION STARTS HERE -- */
+
+.footer-container{
+    background: url('../images/footerBgd.png');
+    width: 1920px;
+    height: 1080px;
+}
+
+.footer-content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 125px 0;
+    letter-spacing: 0.05mm;
+}
+
+.footer-content h1{
+    color: white;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.footer-content h3{
+    color: white;
+    font-size: 54px;
+    font-weight: 600;
+    font-family: 'Titillium Web';
+    margin-top: 1%;
+}
+
+.footer-content button{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    font-family: "Fira Sans";
+}
+
+.footer-btn{
+    background-color: #726FE9;
+    padding: 20px 90px; 
+}
+
+.footer-glass{
+    background: rgba(232, 232, 232, 0.1);
+    padding: 60px 270px;
+    font-size: 0;
+}
+
+.footer-glass h1{
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105%;
+    margin: 0 auto;
+}
+
+.footer-glass button{
+    background-color: #726FE9;
+    padding: 16px 60px;
+    width: 45%;
+    margin-top: 25px;
+    transition: .4s;
+    font-weight: 500;
+}
+
+.footer-glass input{
+    border: none;
+    outline: none;
+    font-size: 24px;
+    padding: 15px 10px;
+    width: 80%;
+}
+
+
+
+
+.created-by{
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+}
+
+.created-by p{
+    text-align: center;
+    color: white;
 }

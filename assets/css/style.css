@@ -145,22 +145,38 @@ header{
     padding-bottom: 50px;
 }
 
+.about-desc ul li {
+    margin: 13px 0;
+}
 
-
-
+.about-slider{
+    width: 823px;
+    height: auto;
+    overflow-x: hidden;
+}
 
 .about-desc{
-    display: none;
-    transition: .4s;
+    width: 823px;
 }
 
 .about-specs{
-    display: none;
-    transition: .4s;
+    width: 823px;
 }
 
 .about-goodFor{
-    display: none;
+    width: 823px;
+}
+
+.about-divs{
+    width: 2469px;
+    margin-left: 0;
+    display: flex;
+    transition: .5s;
+}
+
+.selected{
+    text-decoration: underline;
+    color: #3C9CE6;
     transition: .4s;
 }
 
@@ -185,18 +201,4 @@ header{
     color: white;
     font-size: 24px;
     padding: 15px 130px;
-}
-
-.block{
-    display: block;
-}
-
-.display-none{
-    display: none;
-}
-
-.selected{
-    text-decoration: underline;
-    color: #3C9CE6;
-    transition: .4s;
 }

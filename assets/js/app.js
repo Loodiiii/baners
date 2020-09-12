@@ -5,9 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const specs = document.querySelector('#specs')
     const goodFor = document.querySelector('#good-for')
 
-    const descDiv = document.querySelector(".about-desc")
-    const specsDiv = document.querySelector(".about-specs")
-    const goodForDiv = document.querySelector(".about-goodFor")
+    const divs = document.querySelector(".about-divs")
 
 
     // Event Listeners
@@ -15,26 +13,20 @@ document.addEventListener('DOMContentLoaded', function () {
         specs.classList.remove("selected")
         goodFor.classList.remove("selected")
         desc.classList.add("selected")
-        specsDiv.classList.remove("block")
-        goodForDiv.classList.remove("block")
-        descDiv.classList.add("block")
+        divs.style.marginLeft = "0";
     })
 
     specs.addEventListener("click", function () {
         desc.classList.remove("selected")
         goodFor.classList.remove("selected")
         specs.classList.add("selected")
-        descDiv.classList.remove("block")
-        goodForDiv.classList.remove("block")
-        specsDiv.classList.add("block")
+        divs.style.marginLeft = "-823px";
     })
 
     goodFor.addEventListener("click", function () {
         specs.classList.remove("selected")
         desc.classList.remove("selected")
         goodFor.classList.add("selected")
-        specsDiv.classList.remove("block")
-        descDiv.classList.remove("block")
-        goodForDiv.classList.add("block")
+        divs.style.marginLeft = "-1646px";
     })
 });

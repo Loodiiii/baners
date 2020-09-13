@@ -28,7 +28,7 @@ body {
 h1{
     font-size: 42px;
     font-weight: bold;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web';
     color: #000000;
 }
 
@@ -39,7 +39,7 @@ h3 {
 
 p{
     font-size: 24px;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Sans';
     font-weight: normal;
 }
 
@@ -51,14 +51,14 @@ header{
 }
 
 .header-bgd{
-    background:  url('../images/header-bg.jpg');
+    background:  url('../images/header-bg.png');
     width: 100%;
     height: 70%;
     background-size: cover;
 }
 
 .header-bgd-glass{
-    background: rgba(163, 168, 175, 0.4);
+
     width: 100%;
     height: 100%;
 }
@@ -71,22 +71,32 @@ header{
     height: 100%;
 }
 
-.header-content h1:nth-child(1){
+.header-content h1{
+    background-color: #726FE9;
     line-height: 1.1;
     letter-spacing: 0.05mm;
     font-size: 72px;
     text-transform: uppercase;
+    color: white;
+    padding: 5px 20px;
+    font-weight: bold;
 }
 
-.header-content h1:nth-child(2){
+.header-content h2{
+    background-color: #726FE9;
     margin-bottom: 45px;
     letter-spacing: .05mm;
     font-size: 64px;
     font-weight: 600;
+    color: white;
+    padding: 0 20px;
+    margin-top: 10px;
+    font-family: 'Titillium Web';
 }
 
 .headerBtn{
-    background-color: #726FE9;
+    background-color: #FF0000;
+    font-family: "Fira Sans";
     text-transform: uppercase;
     font-size: 24px;
     padding: 21px 54px;
@@ -259,6 +269,66 @@ header{
     margin-top: 10%;
 }
 
+/* -- THIRD SECTION STARTS HERE -- */
+
+#s3{
+    height: auto;
+}
+
+.s3-container{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.s3-container h1{
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.s3-container h2{
+    font-weight: normal;
+    font-size: 32px;
+    font-family: "Titillium Web";
+}
+
+.s3-button{
+    font-weight: 500;
+    font-family: "Poppins";
+    padding: 15px 60px;
+    background-color: #726FE9;
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 135px;
+}
+
+.easyToUse-photo{
+    background: url('../images/photo7.png');
+    width: 1920px;
+    height: 1040px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* -- FOURTH SECTION STARTS HERE - TESTIMONIALS -- */
+
+#s4{
+    height: auto;
+}
+
+.s4-container {
+    padding-top: 120px;
+    height: auto;
+    background-color: #EDEFF2;
+}
+
+.s4-container h1{
+    text-align: center;
+    font-weight: bold;
+}
+
 /* -- FOOTER SECTION STARTS HERE -- */
 
 .footer-container{
@@ -288,20 +358,23 @@ header{
     font-size: 54px;
     font-weight: 600;
     font-family: 'Titillium Web';
-    margin-top: 1%;
+    margin-top: -8px;
 }
 
-.footer-content button{
+.footer-content button {
     font-size: 24px;
-    font-weight: 500;
-    margin-top: 5%;
-    margin-bottom: 4%;
     font-family: "Fira Sans";
+    font-weight: 500;
 }
 
 .footer-btn{
     background-color: #726FE9;
-    padding: 20px 90px; 
+    padding: 20px 90px;
+}
+
+.footer-anchor{
+    margin-top: 4%;
+    margin-bottom: 9%;
 }
 
 .footer-glass{
@@ -321,14 +394,13 @@ header{
     align-items: center;
     width: 105%;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
-.footer-glass button{
+.sign-up button{
     background-color: #726FE9;
     padding: 16px 60px;
     width: 45%;
-    margin-top: 25px;
-    transition: .4s;
     font-weight: 500;
 }
 

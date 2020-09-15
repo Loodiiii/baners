@@ -117,12 +117,16 @@ header{
     background: url('../images/about-security-camera.png');
     background-size: cover;
     background-position: center;
-    width: 628px;
-    height: 628px;
+    min-width: 628px;
+    min-height: 628px;
+}
+
+:root{
+    --slider-width: 823px;
 }
 
 .about-content {
-    width: 822px;
+    width: var(--slider-width);
     height: auto;
     font-weight: normal;
     font-size: 24px;
@@ -130,6 +134,7 @@ header{
 
 .about-heading h1{
     font-size: 42px;
+    width: 100%;
 }
 
 .about-heading p{
@@ -162,28 +167,46 @@ header{
 }
 
 .about-slider{
-    width: 823px;
+    width: var(--slider-width);
     height: auto;
     overflow-x: hidden;
 }
 
 .about-desc{
-    width: 823px;
+    width: var(--slider-width);
+    display: flex;
+    flex-direction: column;
 }
 
 .about-specs{
-    width: 823px;
+    width: var(--slider-width);
+    display: flex;
+    flex-direction: column;
 }
 
 .about-goodFor{
-    width: 823px;
+    width: var(--slider-width);
+    display: flex;
+    flex-direction: column;
 }
 
 .about-divs{
-    width: 2469px;
+    width: calc(var(--slider-width) * 3);;
     margin-left: 0;
     display: flex;
     transition: .5s;
+}
+
+.margin-left-1{
+    margin-left: 0;
+}
+
+.margin-left-2{
+    margin-left: calc(var(--slider-width) * -1);
+}
+
+.margin-left-3{
+    margin-left: calc(var(--slider-width) * -2);
 }
 
 .selected{
@@ -353,7 +376,82 @@ header{
     margin-top: 50px;
     background: url('../images/play-btn.png');
     background-size: cover;
+    cursor: pointer;
 }
+
+@keyframes rotatePlay {
+    0%   {
+        transform: rotate(0deg);
+    }
+    25%  {
+        transform: rotate(-90deg);
+    }
+    50%  {
+        transform: rotate(-180deg);
+    }
+    75% {
+        transform: rotate(-270deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.play-btn:hover{
+    animation: rotatePlay .3s ease;
+}
+
+.pop-up{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.45);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    top: 0;
+    display: none;
+    transition: .5s;
+}
+
+.s5-cross{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 30px;
+    right: 30px;
+    opacity: .3;
+    cursor: pointer;
+}
+
+.s5-cross:hover {
+    opacity: 1;
+}
+
+.s5-cross:before, .s5-cross:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 100px;
+    width: 5px;
+    background-color: #000000;
+}
+
+.s5-cross:before {
+    transform: rotate(45deg);
+}
+
+.s5-cross:after {
+    transform: rotate(-45deg);
+}
+
+.pop-up-video{
+    background: url('../videos/baners.mp4');
+    width: 1280px;
+    height: 720px;
+    margin: 0 auto;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
 
 /* -- SECTION 5 ENDS HERE -- */
 /* -- FOOTER SECTION STARTS HERE -- */
@@ -439,9 +537,6 @@ header{
     width: 80%;
 }
 
-
-
-
 .created-by{
     width: 100%;
     background-color: black;
@@ -455,6 +550,74 @@ header{
 
 
 /* Media Queries */
+
+/* ROOT Media */
+
+@media only screen and (max-width: 1790px){
+    :root{
+        --slider-width: 780px;
+    }
+}
+
+@media only screen and (max-width: 1775px){
+    :root{
+        --slider-width: 750px;
+    }
+}
+
+@media only screen and (max-width: 1730px){
+    :root{
+        --slider-width: 680px;
+    }
+}
+
+@media only screen and (max-width: 1650px){
+    :root{
+        --slider-width: 610px;
+    }
+}
+
+@media only screen and (max-width: 1585px){
+    :root{
+        --slider-width: 650px;
+    }
+    .s1-container{
+        padding: 0 80px;
+        padding-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width: 1515px){
+    :root{
+        --slider-width: 630px;
+    }
+}
+
+@media only screen and (max-width: 1440px){
+    :root{
+        --slider-width: 610px;
+    }
+}
+
+@media only screen and (max-width: 1420px){
+    :root{
+        --slider-width: 515px;
+    }
+}
+
+@media only screen and (max-width: 1335px){
+    :root{
+        --slider-width: 450px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .s1-container{
+        flex-direction: column;
+    }
+}
+
+/* RESPONSIVE MEDIA */
 
 @media only screen and (max-width: 425px) {
 

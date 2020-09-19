@@ -466,7 +466,7 @@ header{
     height: 100vh;
     z-index: 1000;
     top: 0;
-    display: none;
+    /* display: none; */
     transition: .5s;
 }
 
@@ -507,7 +507,7 @@ header{
 .pop-up-video{
     width: 1280px;
     height: 720px;
-    margin: 0 auto;
+    margin: 6%;
     display: block;
 }
 
@@ -769,6 +769,9 @@ header{
     .about-buttons button{
         padding: 15px 77px;
     }
+    .s3-button{
+        margin-bottom: 80px;
+    }
 }
 
 @media only screen and (max-width: 1585px){
@@ -782,11 +785,21 @@ header{
     .about-buttons button{
         padding: 15px 85px;
     }
+    .s5-cross{
+        right: 40px;
+    }
 }
 
 @media only screen and (max-width: 1515px){
     :root{
         --slider-width: 630px;
+    }
+    .pop-up-video{
+        margin: 10% 6%;
+    }
+    .s5-cross{
+        right: 20px;
+        top: 25px;
     }
 }
 
@@ -797,6 +810,12 @@ header{
     .about-buttons button{
         padding: 15px 76px;
     }
+    .s3-button{
+        margin-bottom: 110px;
+    }
+    .easyToUse-photo{
+        height: 780px;
+    }
 }
 
 @media only screen and (max-width: 1420px){
@@ -805,6 +824,23 @@ header{
     }
     .about-buttons button{
         padding: 15px 52px;
+    }
+}
+
+@media only screen and (max-width: 1390px){
+    .pop-up-video{
+        margin: 10% 5%;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .easyToUse-photo{
+        height: 740px;
+    }
+    .pop-up-video{
+        margin: 12% 13%;
+        width: 1024px;
+        height: 576px;
     }
 }
 
@@ -843,6 +879,12 @@ header{
     .about-buttons button{
         padding: 15px 170px;
     }
+    .easyToUse-photo{
+        height: 690px;
+    }
+    .s5-cross{
+        top: 20px;
+    }
 }
 
 @media only screen and (max-width: 1180px) {
@@ -855,8 +897,64 @@ header{
     .s1-container{
         padding: 0;
     }
+    .pop-up-video{
+        margin: 12% 7%;
+    }
     .about-content{
         margin: 80px auto;
+    }
+
+    .footer-container {
+        height: auto;
+    }
+
+    .footer-content {
+        padding: 70px 10px;
+    }
+
+    .footer-content h1 {
+        font-size: 28px;
+        line-height: 1.1;
+        text-align: center;
+    }
+
+    .footer-content h3 {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .footer-content button {
+        width: 100%;
+        font-size: 20px;
+        padding: 15px 60px;
+    }
+
+    .footer-glass {
+        margin-top: 50px;
+        padding: 60px 10px;
+    }
+
+    .sign-up {
+        flex-wrap: wrap;
+    }
+
+    .footer-glass input {
+        width: 80%;
+        margin-top: 30px;
+        font-size: 17px;
+    }
+
+    .footer-btn-signup {
+        width: 80% !important;
+    }
+
+}
+
+@media only screen and (max-width: 1120px){
+    .pop-up-video{
+        margin: 12% 5%;
     }
 }
 
@@ -867,6 +965,20 @@ header{
     .about-buttons button{
         padding: 15px 130px;
     }
+    .easyToUse-photo{
+        height: 585px;
+    }
+    .pop-up-video{
+        margin: 13% 21%;
+        width: 640px;
+        height: 360px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .easyToUse-photo{
+        height: 550px;
+    }
 }
 
 @media only screen and (max-width: 940px) {
@@ -875,6 +987,18 @@ header{
     }
     .about-buttons button{
         padding: 15px 110px;
+    }
+    .pop-up-video{
+        margin: 15% 21%;
+    }
+}
+
+@media only screen and (max-width: 877px){
+    .easyToUse-photo{
+        height: 475px;
+    }
+    .pop-up-video{
+        margin: 18% 15%;
     }
 }
 
@@ -887,6 +1011,11 @@ header{
     }
 }
 
+@media only screen and (max-width: 795px){
+    .pop-up-video{
+        margin: 18% 10%;
+    }
+}
 @media only screen and (max-width: 720px) {
     :root{
         --slider-width: 530px;
@@ -896,6 +1025,20 @@ header{
     }
     .about-heading h1{
         font-size: 36px;
+    }
+    .pop-up-video{
+        margin: 20%;
+        width: 400px;
+        height: 225px;
+    }
+    .s5-cross{
+        width: 80px;
+        height: 80px;
+    }
+    .s5-cross::before, .s5-cross::after{
+        height: 50px;
+        left: 34px;
+        top: 11px;
     }
 }
 
@@ -961,12 +1104,18 @@ header{
         width: 470px;
         height: 470px;
     }
+    .pop-up-video{
+        margin: 23% 10%;
+    }
 }
 
 @media only screen and (max-width: 470px){
     .about-camera{
         width: 420px;
         height: 420px;
+    }
+    .pop-up-video{
+        margin: 23% 7%;
     }
 }
 
@@ -984,6 +1133,9 @@ header{
     .about-camera{
         width: 400px;
         height: 400px;
+    }
+    .pop-up-video{
+        margin: 30% 3%;
     }
 }
 
@@ -1148,7 +1300,7 @@ header{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: space-between;
+        align-items: center;
     }
 
     .play-btn {
@@ -1202,6 +1354,20 @@ header{
         width: 80% !important;
     }
 
+    .pop-up-video{
+        width: 320px;
+        height: 180px;
+        margin: 30% 10%;
+    }
+    .s5-cross{
+        width: 65px;
+        height: 65px;
+    }
+    .s5-cross::before, .s5-cross::after{
+        height: 40px;
+        left: 25px;
+        top: 8px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -1217,6 +1383,9 @@ header{
 @media only screen and (max-width: 365px){
     :root {
         --slider-width: 335px;
+    }
+    .pop-up-video{
+        margin: 30% 4%;
     }
 }
 
@@ -1234,5 +1403,8 @@ header{
     .about-camera{
         width: 315px;
         height: 315px;
+    }
+    .pop-up-video{
+        margin: 30% 0;
     }
 }

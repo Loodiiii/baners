@@ -15,7 +15,11 @@ document.addEventListener('DOMContentLoaded', function () {
         specs.classList.remove("selected")
         goodFor.classList.remove("selected")
         desc.classList.add("selected")
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 01eb6044e121ae87b2d21c9547b7e0beacc842e6
         divs.classList.add("margin-left-1")
         divs.classList.remove("margin-left-2", "margin-left-3")
     })
@@ -24,7 +28,11 @@ document.addEventListener('DOMContentLoaded', function () {
         desc.classList.remove("selected")
         goodFor.classList.remove("selected")
         specs.classList.add("selected")
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 01eb6044e121ae87b2d21c9547b7e0beacc842e6
         divs.classList.add("margin-left-2")
         divs.classList.remove("margin-left-1", "margin-left-3")
     })
@@ -36,13 +44,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
         divs.classList.add("margin-left-3")
         divs.classList.remove("margin-left-2", "margin-left-1")
+<<<<<<< HEAD
     })
 
     play.addEventListener("click", function () {
         popUp.style.display = "block"
     })
+=======
+    })
+
+    play.addEventListener("click", function () {
+        popUp.style.display = "block"
+    })
+>>>>>>> 01eb6044e121ae87b2d21c9547b7e0beacc842e6
     document.querySelector(".s5-cross").addEventListener("click", function () {
         popUp.style.display = "none"
     })
 
+<<<<<<< HEAD
 })
+=======
+});
+>>>>>>> 01eb6044e121ae87b2d21c9547b7e0beacc842e6

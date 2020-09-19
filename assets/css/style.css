@@ -229,6 +229,21 @@ header{
     flex-direction: column;
 }
 
+#about-night{
+    background-color: black;
+    color: white;
+    padding: 0 3px;
+}
+
+#about-infra{
+    background-color: red;
+    color: white;
+}
+
+#about-red{
+    color: red;
+}
+
 .about-specs{
     width: var(--slider-width);
     display: flex;
@@ -466,7 +481,7 @@ header{
     height: 100vh;
     z-index: 1000;
     top: 0;
-    /* display: none; */
+    display: none;
     transition: .5s;
 }
 
@@ -505,9 +520,9 @@ header{
 }
 
 .pop-up-video{
-    width: 1280px;
-    height: 720px;
-    margin: 6%;
+    width: 1440px;
+    height: 900px;
+    margin: 2% 11%;
     display: block;
 }
 
@@ -741,6 +756,11 @@ header{
     }
     .about-buttons button{
         padding: 15px 120px;
+    }
+    .pop-up-video{
+        width: 1280px;
+        height: 720px;
+        margin: 8% 14%;
     }
 }
 

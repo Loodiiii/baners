@@ -110,21 +110,23 @@ header{
 }
 
 .header-bgd-glass{
-
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100%;
+    height: 50%;
 }
 
 .header-content h1{
-    background-color: #726FE9;
+    background-color: rgba(29, 161, 161, 0.7);
     line-height: 1.1;
     letter-spacing: 0.05mm;
     font-size: 72px;
@@ -132,8 +134,20 @@ header{
     color: white;
     padding: 5px 20px;
     font-weight: bold;
+    animation: headerh1 .5s ease-in-out;
 }
 
+@keyframes headerh1 {
+    from{
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* 
 .header-content h2{
     background-color: #726FE9;
     margin-bottom: 45px;
@@ -144,16 +158,36 @@ header{
     padding: 0 20px;
     margin-top: 10px;
     font-family: 'Titillium Web';
-}
+} */
 
 .headerBtn{
-    background-color: #FF0000;
+    background-color: rgba(29, 161, 161, 1);
     font-family: "Fira Sans";
     text-transform: uppercase;
     font-size: 24px;
     padding: 21px 54px;
     font-weight: 500;
     letter-spacing: 0.05mm;
+    animation: headerBtn .5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes headerBtn{
+    0%{
+        transform: skewX(50deg) translateX(-400px);
+    }
+    50%{
+        transform: skewX(0deg) translateX(0);
+    }
+    60%{
+        transform: skewX(-5deg) translateX(3px);
+    }
+    70%{
+        transform: skewX(5deg) translateX(-3px);
+    }
+    100%{
+        transform: skewX(0deg) translateX(0);
+    }
 }
 
 /* -- HEADER ENDS HERE -- */
@@ -194,12 +228,21 @@ header{
     font-size: 28px;
 }
 
+#discount-span{
+    background-color: yellow;
+    padding: 5px;
+}
+
+#discount-p1{
+    text-decoration: line-through;
+}
+
 .about-navigation{
     margin-bottom: 4%;
 }
 
 .about-navigation span{
-    cursor: pointer;
+    cursor: none;
     transition: .4s;
 }
 
@@ -227,21 +270,6 @@ header{
     width: var(--slider-width);
     display: flex;
     flex-direction: column;
-}
-
-#about-night{
-    background-color: black;
-    color: white;
-    padding: 0 3px;
-}
-
-#about-infra{
-    background-color: red;
-    color: white;
-}
-
-#about-red{
-    color: red;
 }
 
 .about-specs{
@@ -276,9 +304,12 @@ header{
 }
 
 .selected{
-    text-decoration: underline;
-    color: #3C9CE6;
+    background: #3C9CE6;
+    color: #fff;
     transition: .4s;
+    text-transform: uppercase;
+    border: 3px solid #3C9CE6;
+    padding: 10px 20px;
 }
 
 .about-buttons{
@@ -396,8 +427,8 @@ header{
 }
 
 .easyToUse-photo{
-    background: url('../images/photo7.png');
-    background-size: 100%;
+    background: url('../images/photo7l.png');
+    background-size: 100% 100%;
     background-position: center;
     width: 100%;
     height: 1040px;

@@ -44,5 +44,21 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector(".s5-cross").addEventListener("click", function () {
         popUp.style.display = "none"
     })
+})
 
+
+function appearOnScroll(e, clas) {
+    var elementFadeLeft = document.querySelector(e)
+    var elementFadeLeftPosition = elementFadeLeft.getBoundingClientRect().top
+    var screenFadeLeftPosition = window.innerHeight / 1.3
+
+    if (elementFadeLeftPosition < screenFadeLeftPosition) {
+        elementFadeLeft.classList.add(clas)
+    }
+}
+
+window.addEventListener("scroll", () => {
+    appearOnScroll(".motion-icon", "block");
+    appearOnScroll(".about-camera", "about-camera-active");
+    appearOnScroll(".about-content", "about-content-active");
 })

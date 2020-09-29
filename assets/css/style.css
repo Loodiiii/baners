@@ -1274,12 +1274,6 @@ header{
         height: 400px;
     }
 
-    .header-content {
-        align-items: flex-start;
-        justify-content: flex-start;
-        padding: 110px 10px;
-    }
-
     .header-content h1 {
         font-size: 28px;
         padding: 5px 10px;
